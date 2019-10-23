@@ -1,0 +1,26 @@
+/*
+   Import partials below
+*/
+@import './normalize';
+
+// helpers
+
+@import './helpers/base.scss';
+@import './helpers/fonts.scss';
+@import './helpers/variables.scss';
+
+// sass
+
+@import './1-header.scss';
+@import './2-junior.scss';
+@import './3-masters.scss';
+@import './4-product.scss';
+@import './5-test.scss';
+@import './6-components.scss';
+@import './7-study-form.scss';
+@import './8-teatchers.scss';
+@import './9-certificate.scss';
+@import './10-reviews.scss';
+@import './11-footer.scss';
+
+

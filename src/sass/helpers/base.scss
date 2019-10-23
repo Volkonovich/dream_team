@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol {
+    list-style: none;
+}
+.container{
+    width: 290px;
+    margin: 0 auto;
+}
+@media (min-width:768px) {
+    .container{
+        width: 710px;
+    }
+}
+@media (min-width:1420px){
+    .container{
+        width: 1420px;
+    }
+}
