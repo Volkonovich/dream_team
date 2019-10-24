@@ -395,6 +395,18 @@ ol {
   margin: 0 auto;
 }
 
+.section-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #fec240;
+  text-transform: uppercase;
+}
+
+.section-title__span {
+  color: #282828;
+}
+
 /* marck-script-regular - latin */
 
 @font-face {
@@ -467,14 +479,209 @@ ol {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+.header {
+  background-image: url(../images/header-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: relative;
+  min-height: 450px;
+}
+
+.header__title-paragraf {
+  margin: 0 auto;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 60px;
+  font-size: 16px;
+  width: 81%;
+}
+
+.header__title-name {
+  margin: 0 auto;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.header__more {
+  display: block;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  padding-top: 38px;
+}
+
+.header__more::after {
+  display: block;
+  width: 96px;
+  height: 3px;
+  background-color: #7ab4fb;
+  content: "";
+  margin: 0 auto;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  width: 291px;
+  height: 132px;
+  background: url(../images/kids.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding-top: 15px;
+}
+
+.navigation__list {
+  visibility: hidden;
+  display: flex;
+}
+
+.navigation__list-link:hover {
+  color: #fec240;
+}
+
+.navigation__svg {
+  width: 115px;
+  height: 30px;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 710px;
+  }
+
+  .container {
+    width: 710px;
+  }
+
+  .navigation__list {
+    display: flex;
+    visibility: initial;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #e9e9f3;
+  }
+
+  .navigation__list-link {
+    margin: 0 auto;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #e9e9f3;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .navigation__list-item:not(:last-child) {
+    margin-right: 70px;
+  }
+
+  .header {
+    padding-top: 40px;
+    min-height: 750px;
+  }
+
+  .header__title-paragraf {
+    width: 100%;
+    letter-spacing: 0.6px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .header__title-name {
+    margin: 0 auto;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+    width: 60%;
+  }
+
+  .header::after {
+    content: '';
+    position: absolute;
+    width: 710px;
+    height: 335px;
+    background: url(../images/kids.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
   }
 }
 
 @media (min-width: 1420px) {
   .container {
     width: 1420px;
+  }
+
+  .header {
+    min-height: 1186px;
+  }
+
+  .header::after {
+    content: '';
+    position: absolute;
+    width: 1400px;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5%;
+  }
+
+  .header__title-paragraf {
+    font-size: 36px;
+    font-weight: 500;
+    padding-top: 144px;
+  }
+
+  .header__title-name {
+    font-size: 60px;
+    padding-top: 76px;
+    width: 85%;
+  }
+
+  .header__more {
+    font-size: 30px;
+    padding-top: 76px;
+  }
+
+  .header__more::after {
+    display: block;
+    width: 185px;
+    height: 3px;
+    background-color: #7ab4fb;
+    content: "";
+    margin: 0 auto;
+  }
+
+  .navigation__list-link {
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
   }
 }

@@ -4,7 +4,7 @@
 @import './normalize';
 
 // helpers
-
+@import './helpers/variables.scss';
 @import './helpers/base.scss';
 @import './helpers/fonts.scss';
 @import './helpers/variables.scss';
@@ -22,5 +22,3 @@
 @import './9-certificate.scss';
 @import './10-reviews.scss';
 @import './11-footer.scss';
-
-
