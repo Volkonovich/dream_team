@@ -1,0 +1,35 @@
+.container {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.junior {
+  background-image: url(../images/section-1-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top 70% left 50%;
+  min-height: 294px;
+  
+
+  &__text{
+    margin: 0 auto;
+    font-family: $main-font;
+    font-size: 20px;
+    font-weight: 700;
+    color: $forth-color;
+    text-align: center;
+    padding-top:36px; 
+    padding-bottom:20px;
+    width: 80%;
+    margin: 0 auto;
+
+    &-one{
+        color: $secondary-color;  
+    }
+
+    &-two{
+        color: $secondary-color;   
+    }
+  }
+}

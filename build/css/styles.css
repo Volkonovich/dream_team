@@ -564,6 +564,41 @@ ol {
   height: 30px;
 }
 
+.container {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.junior {
+  background-image: url(../images/section-1-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top 70% left 50%;
+  min-height: 294px;
+}
+
+.junior__text {
+  margin: 0 auto;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #222222;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.junior__text-one {
+  color: #fec240;
+}
+
+.junior__text-two {
+  color: #fec240;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 710px;
