@@ -3,33 +3,111 @@
   margin: 0 auto;
 }
 
-.junior {
+.for-cover {
   background-image: url(../images/section-1-bg.svg);
-  background-size: cover;
+  background-size: 205%;
   background-repeat: no-repeat;
-  background-position: center;
-  background-position: top 70% left 50%;
-  min-height: 294px;
-  
+  background-position: 58% -60%;
+}
 
-  &__text{
+.junior {
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  &__text {
     margin: 0 auto;
     font-family: $main-font;
     font-size: 20px;
     font-weight: 700;
     color: $forth-color;
     text-align: center;
-    padding-top:36px; 
-    padding-bottom:20px;
-    width: 80%;
+    padding-top: 36px;
+    padding-bottom: 20px;
+    width: 90%;
     margin: 0 auto;
 
-    &-one{
-        color: $secondary-color;  
+    &-one {
+      color: $secondary-color;
     }
 
-    &-two{
-        color: $secondary-color;   
+    &-two {
+      color: $secondary-color;
+    }
+  }
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 710px;
+  }
+
+  .for-cover {
+    background-size: 172%;
+    background-repeat: no-repeat;
+    background-position: 58% -211%;
+  }
+
+  .junior {
+    &__text {
+      font-size: 35px;
+      letter-spacing: 1.05px;
+      text-align: center;
+      padding-top: 85px;
+      padding-bottom: 100px;
+      width: 78%;
+      margin: 0 auto;
+    }
+
+    &__img {
+      width: 60%;
+      padding-bottom: 60px;
+    }
+  }
+
+}
+
+@media (min-width:1420px) {
+  .container {
+    width: 1420px;
+  }
+
+  .for-cover {
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position: 152% 37%;
+
+  }
+
+  .junior {
+    &__content-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      margin-top: 100px;
+      padding-bottom: 80px;
+    }
+
+    &__text {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      font-size: 55px;
+      letter-spacing: 1.05px;
+      text-align: center;
+      padding-top: 350px;
+      margin: 0;
+    }
+
+    &__img {
+      padding-top: 178px;
+      width: 105%;
+      padding-bottom: 30px;
+      margin: 0 auto;
+      padding-left: 50px;
+
     }
   }
 }

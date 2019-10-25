@@ -1,0 +1,58 @@
+.container {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.masters {
+  background-image: url(../images/section-2-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+//   background-position: 58% -60%;
+  min-height: 1287px;
+
+  &__paragraf-one {
+    font-size: 35px;
+    letter-spacing: 0.256px;
+    font-weight: 900;
+    font-family: $main-font;
+    color: $sixth-color;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 16px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+
+    &-item {
+      display: block;
+      text-align: center;
+
+    }
+  }
+
+  &__name {
+    &-card {
+      font-size: 20px;
+      font-weight: 400;
+      font-family: $third-font;
+      color: $secondary-color;
+      padding-top: 18px;
+    }
+
+    &-post {
+      font-size: 16px;
+      line-height: 36px;
+      font-weight: 400;
+      letter-spacing: 1.05px;
+      font-family: $main-font;
+      color: $main-color;
+      padding-top: 18px;
+      width: 83%;
+      margin: 0 auto;
+      padding-bottom: 34px;
+    }
+  }
+}
