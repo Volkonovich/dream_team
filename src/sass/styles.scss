@@ -1,16 +1,9 @@
-/*
-   Import partials below
-*/
 @import './normalize';
-
 // helpers
 @import './helpers/variables.scss';
 @import './helpers/base.scss';
 @import './helpers/fonts.scss';
-@import './helpers/variables.scss';
-
 // sass
-
 @import './1-header.scss';
 @import './2-junior.scss';
 @import './3-masters.scss';

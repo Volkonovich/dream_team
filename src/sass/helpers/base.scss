@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -35,10 +39,27 @@ ol {
   font-weight: 700;
   font-size: 15px;
   color: $secondary-color;
- 
+
 
   &__span {
     color: $main-color;
   }
 
+}
+
+@media (min-width:1420px) {
+  .container {
+    width: 1420px;
+  }
+}
+
+.section-title {
+  font-family: $secondary-font;
+  font-size: 15px;
+  color: $secondary-color;
+
+  &__span {
+    color: $main-color;
+    text-transform: uppercase;
+  }
 }
