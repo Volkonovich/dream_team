@@ -13,6 +13,20 @@ ul,ol {
     width: 290px;
     margin: 0 auto;
 }
+
+.section-title {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 15px;
+    color: $secondary-color;
+    text-transform: uppercase;
+  
+    &__span {
+      color: $main-color;
+    }
+  
+}
+
 @media (min-width:768px) {
     .container{
         width: 710px;

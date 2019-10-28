@@ -1,0 +1,213 @@
+
+.hidden{
+    display: none;
+}
+
+.reviews{
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.review-wrap{
+    position: relative;
+}
+
+.review{
+    padding-bottom: 70px;
+
+    &__list{
+    position: relative;
+    display: flex;
+
+    &-img{
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    &-text{
+        font-family: $main-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: $fifth-color;
+        text-align: center;
+        padding: 0 8px 0 8px;
+    }
+
+    &-name{
+        font-family: $main-font;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 27px;
+        text-align: center;
+        margin-bottom: 30px;
+        
+        &::before{
+        background-image: url(../images/quotes.png);
+        content: '';
+        position: absolute;
+        width: 17px;
+        height: 12px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 36%;
+        left: 47%;
+        }
+    }
+
+    &-item{
+        text-align: center;
+        margin: 0 auto;
+        width: 270px;
+        height: 460px;
+        box-shadow: 0px 10px 30px 0px rgba(1, 1, 0, 0.07);
+        position: relative;
+    }
+}
+}
+
+.read-more{
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: $secondary-color;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 30%;
+    transform: translateX(3%);
+
+    &:hover{
+        cursor: pointer;
+        fill: $seventh-color;
+    }
+
+    &-left{
+        background-image: url(../images/left.png);
+        background-repeat: no-repeat;
+        background-size: 15px 15px;
+        height: 40px;
+        width: 40px;
+        background-position: center;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1.5px 2.598px 9px 0px rgba(2, 2, 1, 0.1);
+        margin-right: 205px;
+        transform: translateX(-37%);
+        border: none;
+    
+        &:hover{
+            cursor: pointer;
+            background-image: url(../images/left-b.png);
+        }
+    }
+
+    &-right{
+        background-image: url(../images/right.png);
+        background-size: 15px 15px;;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1.5px 2.598px 9px 0px rgba(2, 2, 1, 0.1);
+        border: none;
+    
+        &:hover{
+            cursor: pointer;
+            background-image: url(../images/right-b.png);
+        }
+    }
+
+}
+
+
+@media (min-width:768px) {
+    .container{
+        width: 768px;
+    }
+
+    .reviews{
+        font-size: 20px;
+        line-height: 45px;
+    }
+
+    .review-wrap{
+        display: flex;
+        overflow: hidden;
+    }
+
+    .hidden{
+        display: block;
+        
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
+
+    .review__list{
+        display: flex;
+        justify-content: flex-end;
+        transform:  translateX(13%);
+        left: -50%;
+
+        &-text{
+            padding: 0 30px;
+        }
+
+        &-name{
+
+        &::before{
+            top: 41%;
+        }
+    }
+        
+    &-img{
+        padding-top: 60px;
+        padding-bottom: 62px;
+        }
+    
+        &-item{
+            width: 380px;
+            height: 500px;
+            margin-right: 40px;
+        }
+    }
+
+    .slider__btn{
+        transform: translateX(48%);
+
+        &-left{
+            margin-right: 317px;
+        }
+    }
+}
+
+@media (min-width:1420px){
+    .container{
+        width: 1420px;
+    }
+
+    .reviews{
+        font-size: 30px;
+        width: 1920px;
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+
+    .review__list{
+        transform: translateX(-30%);
+        left: 50%;
+    }
+
+    .slider__btn{
+        display: none;
+    }
+
+    .review-wrap{
+        overflow: initial;
+    }
+}
