@@ -23,3 +23,16 @@ ul,ol {
         width: 1420px;
     }
 }
+
+.section-title {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 15px;
+    color: $secondary-color;
+    text-transform: uppercase;
+  
+    &__span {
+      color: $main-color;
+    }
+  
+  }
