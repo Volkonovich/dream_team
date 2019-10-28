@@ -6,9 +6,17 @@
 .masters {
   background-image: url(../images/section-2-bg.svg);
   background-size: cover;
+  background-position: 0 90%;
   background-repeat: no-repeat;
-//   background-position: 58% -60%;
-  min-height: 1287px;
+
+  &__img {
+    margin-bottom: 18px;
+  }
+
+  .section-title {
+    text-transform: uppercase;
+    text-align: center;
+  }
 
   &__paragraf-one {
     font-size: 35px;
@@ -19,6 +27,7 @@
     text-align: center;
     margin: 0 auto;
     padding-top: 16px;
+
   }
 
   &__list {
@@ -39,7 +48,7 @@
       font-weight: 400;
       font-family: $third-font;
       color: $secondary-color;
-      padding-top: 18px;
+      margin-bottom: 18px;
     }
 
     &-post {
@@ -49,10 +58,177 @@
       letter-spacing: 1.05px;
       font-family: $main-font;
       color: $main-color;
-      padding-top: 18px;
       width: 83%;
       margin: 0 auto;
-      padding-bottom: 34px;
+      margin-bottom: 34px;
+    }
+  }
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 710px;
+  }
+
+  .masters {
+    &__paragraf-one {
+      font-size: 60px;
+    }
+
+    .section-title {
+      font-size: 20px;
+      letter-spacing: 1.05px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-top: 80px;
+      width: 658px;
+      margin-top: 130px;
+      padding-left: 70px;
+
+      &-item {
+        display: flex;
+        // text-align: center;
+        margin-bottom: 30px;
+
+      }
+    }
+
+    &__wrapper-img {
+      width: 230px;
+      height: 230px;
+
+
+    }
+
+    &__img {
+      width: 230;
+      height: 230px;
+
+    }
+
+    &__name {
+      &-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        // text-align: left;
+        padding-left: 20px;
+      }
+
+      &-card {
+        font-size: 30px;
+        position: relative;
+        text-align: left;
+        padding-left: 40px;
+
+
+        &::before {
+          display: block;
+          top: -15px;
+          left: -25px;
+          content: '';
+          background-repeat: no-repeat;
+          position: absolute;
+          width: 57px;
+          height: 37px;
+        }
+
+        &-a::before {
+          background-image: url(../images/arrow1.png);
+          background-repeat: no-repeat;
+        }
+
+        &-b::before {
+          background-image: url(../images/arrow3.png);
+          background-repeat: no-repeat;
+        }
+
+        &-c::before {
+          background-image: url(../images/arrow2.png);
+          background-repeat: no-repeat;
+        }
+
+        &-d::before {
+          background-image: url(../images/arrow2.png);
+          background-repeat: no-repeat;
+        }
+      }
+
+      &-post {
+        font-size: 23px;
+        text-align: left;
+
+      }
+    }
+  }
+}
+
+@media (min-width:1420px) {
+  .container {
+    width: 1420px;
+  }
+
+  .masters {
+    background-image: url(../images/section-2-bg.svg);
+    background-size: cover;
+    background-position: 0 133px;
+    background-repeat: no-repeat;
+
+    &__paragraf-one {
+      font-size: 90px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: auto;
+
+
+      &-item {
+        width: calc(50% - 70px);
+        margin-bottom: 85px;
+      }
+
+    }
+
+    &__name {
+      &-wrapper {
+        padding: 0;
+        justify-content: space-between;
+        padding-top: 70px;
+      }
+
+      &-card {
+        font-size: 30px;
+        padding-left: 55px;
+
+        &::before {
+          display: block;
+          top: -20px;
+          left: -17px;
+          content: '';
+          background-repeat: no-repeat;
+          position: absolute;
+          width: 57px;
+          height: 37px;
+        }
+      }
+
+      &-post {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 30px;
+      }
+    }
+
+    .section-title {
+      font-size: 30px;
     }
   }
 }

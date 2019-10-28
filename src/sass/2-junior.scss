@@ -7,10 +7,13 @@
   background-image: url(../images/section-1-bg.svg);
   background-size: 205%;
   background-repeat: no-repeat;
-  background-position: 58% -60%;
+  background-position: 58% 6%;
 }
 
 .junior {
+  padding-top: 36px;
+  padding-bottom: 20px;
+
   &__img {
     display: block;
     margin: 0 auto;
@@ -24,10 +27,9 @@
     font-weight: 700;
     color: $forth-color;
     text-align: center;
-    padding-top: 36px;
-    padding-bottom: 20px;
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 20px;
 
     &-one {
       color: $secondary-color;
@@ -45,9 +47,10 @@
   }
 
   .for-cover {
-    background-size: 172%;
+    background-image: url(../images/section-1-bg.svg);
+    background-size: 161%;
     background-repeat: no-repeat;
-    background-position: 58% -211%;
+    background-position: 58% -1%;
   }
 
   .junior {
@@ -55,15 +58,14 @@
       font-size: 35px;
       letter-spacing: 1.05px;
       text-align: center;
-      padding-top: 85px;
-      padding-bottom: 100px;
       width: 78%;
       margin: 0 auto;
+      margin-bottom: 95px;
     }
 
     &__img {
       width: 60%;
-      padding-bottom: 60px;
+
     }
   }
 
@@ -75,6 +77,7 @@
   }
 
   .for-cover {
+    background-image: url(../images/section-1-bg.svg);
     background-size: 125%;
     background-repeat: no-repeat;
     background-position: 152% 37%;
@@ -82,12 +85,14 @@
   }
 
   .junior {
+    padding-top: 190px;
+    padding-bottom: 30px;
+
     &__content-wrapper {
       display: flex;
       justify-content: space-between;
       flex-direction: row-reverse;
-      margin-top: 100px;
-      padding-bottom: 80px;
+      align-items: center;
     }
 
     &__text {
@@ -97,16 +102,16 @@
       font-size: 55px;
       letter-spacing: 1.05px;
       text-align: center;
-      padding-top: 350px;
+
       margin: 0;
     }
 
     &__img {
-      padding-top: 178px;
+
       width: 105%;
-      padding-bottom: 30px;
+
       margin: 0 auto;
-      padding-left: 50px;
+
 
     }
   }
