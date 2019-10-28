@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
 }
@@ -23,3 +26,14 @@ ul,ol {
         width: 1420px;
     }
 }
+
+.section-title {
+    font-family: $secondary-font;
+    font-size: 15px;
+    color: $secondary-color;
+  
+    &__span {
+      color: $main-color;
+      text-transform: uppercase;
+    }
+  }
