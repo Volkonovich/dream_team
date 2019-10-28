@@ -1,0 +1,157 @@
+.section-title-study {
+  padding-top: 0px;
+  padding-bottom: 70px;
+}
+
+
+.form {
+  position: relative;
+  background-image: url(../images/section-2-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-position: 0px 41px;
+
+
+  &__list-title {
+    padding-left: 25px;
+  }
+
+  &__list-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 19px;
+  }
+
+  &__list-item:nth-child(1)::before {
+    background-image: url(../images/star-pink.png);
+  }
+
+  &__list-item:nth-child(2)::before {
+    background-image: url(../images/star-yellow.png);
+  }
+
+  &__list-item:nth-child(3)::before {
+    background-image: url(../images/star-blue.png);
+  }
+
+  &__list-title {
+    font-family: $main-font;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__list-description {
+    font-family: $main-font;
+    width: 181px;
+    color: #6b6f7a;
+    padding-left: 23px;
+    padding-bottom: 27px;
+  }
+}
+
+.form::after {
+  position: absolute;
+  content: '';
+  background-image: url(../images/sputnik-2.svg);
+  transform: translateX(35px);
+  bottom: -80px;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  z-index: 100;
+
+
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+
+  65% {
+    transform: translate(0px, 15px);
+  }
+
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+@media (min-width:768px) {
+  .container {
+    width: 710px;
+  }
+
+  .form::after {
+    overflow: hidden;
+    transform: translateX(35px);
+    bottom: -109px;
+    right: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+  }
+
+  .form {
+    width: 100%;
+    background-position: 0 35px;
+    background-size: cover;
+  }
+
+  .form__list-description {
+    width: 100%;
+
+    .form__list-description-span {
+      display: block;
+    }
+  }
+
+}
+
+@media (min-width:1420px) {
+  .container {
+    width: 1420px;
+  }
+
+  .form__list-item {
+    margin: 0;
+    padding-left: 200px;
+  }
+
+  .section-title-study {
+    text-align: initial;
+    padding-left: 200px;
+  }
+
+  .form::after {
+    bottom: -130px;
+    width: 802px;
+    height: 684px;
+    right: 225px;
+  }
+
+  body::after {
+    transform: translateX(35px);
+    bottom: -334px;
+    right: 185px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    height: 700px;
+  }
+
+  .center {
+    left: 664px;
+  }
+}
