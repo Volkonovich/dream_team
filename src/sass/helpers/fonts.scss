@@ -5,8 +5,8 @@
      font-style: normal;
      font-weight: 400;
      src: local('Marck Script'), local('MarckScript-Regular'),
-          url('../fonts/marck-script-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-          url('../fonts/marck-script-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+          url('../../fonts/marck-script-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('../../fonts/marck-script-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
    }
    
 /* oswald-regular - cyrillic_latin */
@@ -34,8 +34,8 @@
        font-style: normal;
        font-weight: 400;
        src: local('Helvetica Neue'), local('HelveticaNeue-Roman'),
-            url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-            url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            url('../../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('../../fonts/HelveticaNeueCyr-Roman.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
      }
      /* helvetica-neue-500 - cyrillic */
      @font-face {
@@ -43,8 +43,8 @@
        font-style: normal;
        font-weight: 500;
        src: local('Helvetica Neue Medium'), local('HelveticaNeue-Medium'),
-            url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-            url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            url('../../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('../../fonts/HelveticaNeueCyr-Medium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
      }
      /* helvetica-neue-700 - cyrillic */
      @font-face {
@@ -52,8 +52,8 @@
        font-style: normal;
        font-weight: 700;
        src: local('Helvetica Neue Bold'), local('HelveticaNeue-Bold'),
-            url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-            url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            url('../../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('../../fonts/HelveticaNeueCyr-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
      }
      /* helvetica-neue-900 - cyrillic */
      @font-face {
@@ -61,8 +61,8 @@
        font-style: normal;
        font-weight: 900;
        src: local('Helvetica Neue Black'), local('HelveticaNeue-Black'),
-            url('../fonts/HelveticaNeueCyr-Black.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-            url('../fonts/HelveticaNeueCyr-Black.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            url('../../fonts/HelveticaNeueCyr-Black.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('../../fonts/HelveticaNeueCyr-Black.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
      }
    
      /* mistral-regular - cyrillic */
@@ -71,6 +71,6 @@
        font-style: normal;
        font-weight: 400;
        src: local('Mistral'), local('Mistral'),
-            url('../fonts/Mistral.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-            url('../fonts/Mistral.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+            url('../../fonts/Mistral.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('../../fonts/Mistral.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
      }
