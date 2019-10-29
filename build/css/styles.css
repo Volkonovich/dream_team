@@ -514,7 +514,6 @@ ol {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  padding-top: 60px;
   font-size: 16px;
   width: 81%;
 }
@@ -527,6 +526,7 @@ ol {
   color: #ffffff;
   text-align: center;
   padding-top: 30px;
+  margin-bottom: 38px;
 }
 
 .header__more {
@@ -536,7 +536,6 @@ ol {
   font-weight: 700;
   color: #fff;
   text-align: center;
-  padding-top: 38px;
 }
 
 .header__more::after {
@@ -567,7 +566,7 @@ ol {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
-  padding-top: 15px;
+  margin-bottom: 60px;
 }
 
 .navigation__list {
@@ -591,9 +590,9 @@ ol {
 
 .for-cover {
   background-image: url(../images/section-1-bg.svg);
-  background-size: 205%;
+  background-size: 180%;
   background-repeat: no-repeat;
-  background-position: 58% 6%;
+  background-position: 57% -99%;
 }
 
 .junior {
@@ -645,6 +644,7 @@ ol {
 .masters .section-title {
   text-transform: uppercase;
   text-align: center;
+  padding-top: 15px;
 }
 
 .masters__paragraf-one {
@@ -985,14 +985,14 @@ ol {
   margin: 0 auto;
 }
 
-.section-title {
+.components .section-title {
   padding-top: 50px;
   padding-bottom: 25px;
   margin: 0 auto;
   text-align: center;
 }
 
-.section-title__span {
+.components .section-title__span {
   color: #282828;
 }
 
@@ -1123,6 +1123,7 @@ ol {
 .section-title-study {
   padding-top: 0px;
   padding-bottom: 70px;
+  text-align: center;
 }
 
 .form {
@@ -1213,7 +1214,9 @@ ol {
 }
 
 .section-title-teatchers {
-  padding-top: 40px;
+  padding-top: 55px;
+  margin-bottom: 35px;
+  text-align: center;
 }
 
 body {
@@ -1336,7 +1339,7 @@ body {
 }
 
 .certificate {
-  background-image: url(../images/header-bg.svg);
+  background-image: url(../images/footer-bg.svg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 41px;
@@ -1547,7 +1550,6 @@ body {
 }
 
 .footer__logo-img {
-  padding-top: 125px;
   padding-bottom: 27px;
 }
 
@@ -1674,11 +1676,12 @@ body {
   }
 
   .header {
-    padding-top: 40px;
+    padding-top: 55px;
     min-height: 750px;
   }
 
   .header__title-paragraf {
+    margin-bottom: 30px;
     width: 100%;
     letter-spacing: 0.6px;
     font-size: 20px;
@@ -1686,13 +1689,12 @@ body {
   }
 
   .header__title-name {
-    margin: 0 auto;
     font-family: "Helvetica Neue", sans-serif;
     font-size: 35px;
     font-weight: 700;
     color: #ffffff;
     text-align: center;
-    padding-top: 30px;
+    padding: 0;
     width: 60%;
   }
 
@@ -1745,6 +1747,7 @@ body {
   .masters .section-title {
     font-size: 20px;
     letter-spacing: 1.05px;
+    padding-top: 25px;
   }
 
   .masters__list {
@@ -1760,7 +1763,7 @@ body {
 
   .masters__list-item {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .masters__wrapper-img {
@@ -1949,13 +1952,8 @@ body {
   }
 
   .form {
-    width: 100%;
     background-position: 0 35px;
     background-size: cover;
-  }
-
-  .form__list-description {
-    width: 100%;
   }
 
   .form__list-description .form__list-description-span {
@@ -2033,23 +2031,15 @@ body {
 
   .certificate {
     background-image: url(../images/certificate-bg-tablet.png);
-    min-width: 768px;
-    min-height: 795px;
     padding-bottom: 90px;
   }
 
   .certificate__picture {
-    margin: 0 auto;
-    width: 428px;
-    height: 364px;
+    margin: 0;
   }
 
   .certificate__picture::before {
     left: -13rem;
-  }
-
-  .certificate .container {
-    width: 570px;
   }
 
   .section__title-head {
@@ -2069,13 +2059,14 @@ body {
     text-align: left;
   }
 
-  .container {
-    width: 768px;
-  }
-
   .reviews {
     font-size: 20px;
     line-height: 45px;
+    padding-top: 71px;
+  }
+
+  .review .container {
+    width: 100%;
   }
 
   .review-wrap {
@@ -2125,8 +2116,12 @@ body {
     margin-right: 317px;
   }
 
-  .container {
-    width: 768px;
+  .certificate {
+    padding-top: 95px;
+  }
+
+  .certificate__title {
+    padding-left: 80px;
   }
 
   .footer {
@@ -2156,11 +2151,12 @@ body {
   .footer__btn {
     display: flex;
     position: absolute;
-    margin-left: 40px;
+    left: 65px;
   }
 
   .footer__btns-social {
     margin-top: 0;
+    margin-left: 20px;
   }
 
   .footer__terms-text {
@@ -2183,6 +2179,7 @@ body {
 
   .header {
     min-height: 1186px;
+    margin-bottom: 150px;
   }
 
   .header::after {
@@ -2195,7 +2192,7 @@ body {
     background-position: center;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -5%;
+    bottom: -20%;
   }
 
   .header__title-paragraf {
@@ -2281,14 +2278,17 @@ body {
 
   .masters__paragraf-one {
     font-size: 90px;
+    padding-top: 0;
   }
 
   .masters__list {
     display: flex;
+    padding-top: 0;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     width: auto;
+    padding-bottom: 35px;
   }
 
   .masters__list-item {
@@ -2326,6 +2326,8 @@ body {
 
   .masters .section-title {
     font-size: 30px;
+    padding: 0;
+    margin-top: 40px;
   }
 
   .product {
@@ -2579,21 +2581,32 @@ body {
     width: 1420px;
   }
 
+  .form {
+    padding-top: 220px;
+  }
+
+  .form__list {
+    padding-bottom: 105px;
+  }
+
+  .form__list-description {
+    width: 100%;
+  }
+
   .form__list-item {
     margin: 0;
     padding-left: 200px;
   }
 
   .section-title-study {
-    text-align: initial;
     padding-left: 200px;
   }
 
   .form::after {
     bottom: -130px;
-    width: 802px;
-    height: 684px;
-    right: 225px;
+    width: 900px;
+    height: 800px;
+    right: 280px;
   }
 
   body::after {
@@ -2612,6 +2625,12 @@ body {
 
   .container {
     width: 1420px;
+  }
+
+  .section-title-teatchers {
+    padding-top: 130px;
+    margin-bottom: 80px;
+    text-align: center;
   }
 
   .btn-center {
@@ -2636,15 +2655,12 @@ body {
 
   .certificate {
     background-image: url(../images/certificate-bg-desk.png);
-    padding-top: 145px;
-    min-width: 1920px;
-    min-height: 734px;
+    background-size: contain;
   }
 
-  .certificate .container {
-    width: 1475px;
+  .certificate-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .section__title {
@@ -2653,7 +2669,7 @@ body {
 
   .section__title-head {
     padding-top: 65px;
-    margin-bottom: 65px;
+    margin-bottom: 30px;
     font-size: 35px;
     line-height: 50px;
     text-align: left;
@@ -2663,7 +2679,7 @@ body {
     font-size: 35px;
     line-height: 50px;
     margin-bottom: 75px;
-    width: 502px;
+    width: 500px;
   }
 
   .container {
@@ -2672,13 +2688,12 @@ body {
 
   .reviews {
     font-size: 30px;
-    width: 1920px;
     padding-top: 80px;
     padding-bottom: 90px;
   }
 
   .review__list {
-    transform: translateX(-30%);
+    transform: translateX(-50%);
     left: 50%;
   }
 
@@ -2696,10 +2711,10 @@ body {
 
   .hid {
     display: flex;
+    position: relative;
   }
 
   .footer {
-    width: 1920px;
     background-image: url(../images/footer-bg-desk.png);
     font-size: 16px;
     line-height: 25px;
@@ -2721,6 +2736,8 @@ body {
     left: 60%;
     bottom: -55%;
     padding: 16px 60px;
+    position: absolute;
+    display: none;
   }
 
   .footer__terms {

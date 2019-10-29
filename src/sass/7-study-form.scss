@@ -1,6 +1,7 @@
 .section-title-study {
   padding-top: 0px;
   padding-bottom: 70px;
+  text-align: center;
 }
 
 
@@ -104,13 +105,13 @@
   }
 
   .form {
-    width: 100%;
+    // width: 100%;
     background-position: 0 35px;
     background-size: cover;
   }
 
   .form__list-description {
-    width: 100%;
+    // width: 100%;
 
     .form__list-description-span {
       display: block;
@@ -124,21 +125,33 @@
     width: 1420px;
   }
 
+  .form {
+    padding-top: 220px;
+  }
+
+  .form__list {
+    padding-bottom: 105px;
+
+    &-description {
+      width: 100%;
+    }
+  }
+
   .form__list-item {
     margin: 0;
     padding-left: 200px;
   }
 
   .section-title-study {
-    text-align: initial;
+    // text-align: initial;
     padding-left: 200px;
   }
 
   .form::after {
     bottom: -130px;
-    width: 802px;
-    height: 684px;
-    right: 225px;
+    width: 900px;
+    height: 800px;
+    right: 280px;
   }
 
   body::after {

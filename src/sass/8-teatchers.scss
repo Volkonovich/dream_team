@@ -3,7 +3,9 @@
 }
 
 .section-title-teatchers {
-  padding-top: 40px;
+  padding-top: 55px;
+  margin-bottom: 35px;
+  text-align: center;
 }
 
 body {
@@ -173,6 +175,12 @@ body {
 @media (min-width:1420px) {
   .container {
     width: 1420px;
+  }
+
+  .section-title-teatchers {
+    padding-top: 130px;
+    margin-bottom: 80px;
+    text-align: center;
   }
 
   .btn-center {

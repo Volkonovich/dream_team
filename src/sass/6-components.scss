@@ -1,18 +1,18 @@
 .components {
   margin: 0 auto;
-}
 
-.section-title {
-  padding-top: 50px;
-  padding-bottom: 25px;
-  margin: 0 auto;
-  text-align: center;
-
-
-  &__span {
-    color: $main-color;
+  .section-title {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    text-align: center;
+  
+  
+    &__span {
+      color: $main-color;
+    }
+  
   }
-
 }
 
 .components-list__item {
