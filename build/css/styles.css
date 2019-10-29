@@ -506,6 +506,7 @@ ol {
   background-position: center top;
   position: relative;
   min-height: 450px;
+  padding: 30px;
 }
 
 .header__title-paragraf {
@@ -590,9 +591,11 @@ ol {
 
 .for-cover {
   background-image: url(../images/section-1-bg.svg);
-  background-size: 180%;
+  background-size: 535px;
   background-repeat: no-repeat;
-  background-position: 57% -99%;
+  background-attachment: local;
+  background-position: -153px 10px;
+  overflow: visible;
 }
 
 .junior {
@@ -840,10 +843,10 @@ ol {
   width: 74px;
   height: 68px;
   position: absolute;
-  top: -60px;
+  top: -80px;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url(../images/icon-sputnik.svg);
+  background-image: url(../images/icon-sputnik-4.svg);
   background-position: 47% 25%;
   background-size: 240px;
 }
@@ -2233,9 +2236,9 @@ body {
 
   .for-cover {
     background-image: url(../images/section-1-bg.svg);
-    background-size: 125%;
+    background-size: 1800px;
     background-repeat: no-repeat;
-    background-position: 152% 37%;
+    background-position: -541px -333px;
   }
 
   .junior {
@@ -2413,7 +2416,7 @@ body {
     width: 160px;
     height: 100px;
     background-size: 430px;
-    background-position: 47% 21%;
+    background-position: 45% 33%;
   }
 
   .test__description {
