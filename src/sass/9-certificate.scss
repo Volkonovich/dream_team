@@ -132,7 +132,8 @@
 
   .certificate {
     background-image: url(../images/certificate-bg-desk.png);
-    background-size: contain;
+    background-size: cover;
+    background-position: center top;
 
     &__picture {
       width: min-content;
