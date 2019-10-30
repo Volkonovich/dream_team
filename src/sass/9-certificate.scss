@@ -24,6 +24,7 @@
     transition: all 0.2s linear;
     position: relative;
     overflow: hidden;
+    
 
     &::before {
       display: block;
@@ -94,15 +95,12 @@
     padding-bottom: 90px;
 
     &__picture {
-      margin: 0;
+      width: min-content;
+      margin: 0 auto;
 
       &::before {
         left: -13rem;
       }
-    }
-
-    .container {
-      //   width: 570px;
     }
   }
 
@@ -135,6 +133,11 @@
   .certificate {
     background-image: url(../images/certificate-bg-desk.png);
     background-size: contain;
+
+    &__picture {
+      width: min-content;
+      margin: 0;
+    }
 
     &-wrapper {
       display: flex;

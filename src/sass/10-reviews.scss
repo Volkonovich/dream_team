@@ -75,8 +75,13 @@
 
 .slider__btn {
   position: absolute;
+  left: 50%;
   top: 30%;
-  transform: translateX(3%);
+  transform: translateX(-50%);
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
+  
 
   &:hover {
     cursor: pointer;
@@ -93,8 +98,6 @@
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     box-shadow: 1.5px 2.598px 9px 0px rgba(2, 2, 1, 0.1);
-    margin-right: 205px;
-    transform: translateX(-37%);
     border: none;
 
     &:hover {
@@ -106,7 +109,6 @@
   &-right {
     background-image: url(../images/right.png);
     background-size: 15px 15px;
-    ;
     background-repeat: no-repeat;
     background-position: center;
     height: 40px;
@@ -126,69 +128,79 @@
 
 
 @media (min-width:768px) {
-  .reviews {
-    font-size: 20px;
-    line-height: 45px;
-    padding-top: 71px;
-
-  }
-
   .review {
-    .container {
+    .container{
       width: 100%;
+  }
+  }
+
+  .slider__btn{
+    width: 426px;
+  }
+
+  .reviews{
+      font-size: 20px;
+      line-height: 45px;
+      padding-top: 71px;
+
+  }
+
+  .review-wrap{
+      display: flex;
+      overflow: hidden;
+      padding: 45px 0;
+  }
+
+  .hidden{
+      display: block;
+
+      &:last-of-type{
+          margin-right: 0;
+      }
+  }
+
+  .review__list{
+      display: flex;
+      justify-content: center;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 45px 0;
+
+      &-text{
+          padding: 0 30px;
+      }
+
+      &-name{
+      &::before{
+          top: 41%;
+      }
+  }
+
+  &-item{
+    width: 380px;
+    height: 500px;
+    
+    &:first-of-type {
+      // position: absolute;
+      // left: 0;
+      transform: translateX(-15%);
     }
-
-  }
-
-  .review-wrap {
-    display: flex;
-    overflow: hidden;
-  }
-
-  .hidden {
-    display: block;
 
     &:last-of-type {
-      margin-right: 0;
+      // position: absolute;
+      // right: 0;
+      transform: translateX(15%);
     }
-  }
+}
 
-  .review__list {
-    display: flex;
-    justify-content: flex-end;
-    transform: translateX(13%);
-    left: -50%;
-
-    &-text {
-      padding: 0 30px;
-    }
-
-    &-name {
-      &::before {
-        top: 41%;
-      }
-    }
-
-    &-img {
+  &-img{
       padding-top: 60px;
       padding-bottom: 62px;
-    }
-
-    &-item {
-      width: 380px;
-      height: 500px;
-      margin-right: 40px;
+      }
     }
   }
 
-  .slider__btn {
-    transform: translateX(48%);
 
-    &-left {
-      margin-right: 317px;
-    }
-  }
-}
 
 @media (min-width:1420px) {
   .container {
@@ -198,7 +210,7 @@
   .reviews {
     font-size: 30px;
     padding-top: 80px;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
   }
 
   .review__list {

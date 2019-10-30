@@ -42,8 +42,11 @@
     background-image: linear-gradient(80deg, rgb(133, 166, 246) 0%, rgb(193, 73, 231) 100%);
     box-shadow: 5.5px 9.526px 16px 0px rgba(90, 118, 233, 0.23);
     color: $third-color;
-    padding: 10px 50px;
+    padding: 15px 53px;
     border-radius: 50px;
+    width: 240px;
+    height: 56px;
+
 
     &:hover {
       background-image: linear-gradient(rgb(250, 184, 51), rgb(250, 184, 51));
@@ -99,7 +102,6 @@
       }
 
       &-link {
-
         &:nth-child(-n+2) {
           margin-right: 18px;
         }
@@ -143,11 +145,11 @@
   }
 
   .footer {
-    background-size: inherit;
+    // background-size: inherit;
     background-image: url(../images/footer-bg-tab.png);
     font-size: 16px;
     line-height: 25px;
-    background-position: bottom;
+    background-position: top right;
 
     &__logo {
       &-img {
@@ -168,21 +170,28 @@
     }
 
     &__btn {
-      display: flex;
-      position: absolute;
+      margin-left: 35px;
+      // display: flex;
+      // position: absolute;
       // margin-left: 40px;
-      left: 65px;
+      // left: 65px;
     }
 
     &__btns {
+      display: flex;
+
       &-social {
         margin-top: 0;
         margin-left: 20px;
+        margin-top: 8px;
       }
 
     }
 
     &__terms {
+      margin: 0;
+      margin-left: 35px;
+
       &-text {
         display: none;
       }
@@ -202,6 +211,14 @@
   .hid {
     display: flex;
     position: relative;
+    background-image: linear-gradient(80deg, rgb(133, 166, 246) 0%, rgb(193, 73, 231) 100%);
+    box-shadow: 5.5px 9.526px 16px 0px rgba(90, 118, 233, 0.23);
+    color: $third-color;
+    padding: 15px 53px;
+    border-radius: 50px;
+    width: 240px;
+    height: 56px;
+    margin-left: 30px;
   }
 
   .footer {

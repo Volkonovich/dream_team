@@ -506,7 +506,6 @@ ol {
   background-position: center top;
   position: relative;
   min-height: 450px;
-  padding: 30px;
 }
 
 .header__title-paragraf {
@@ -1489,8 +1488,12 @@ body {
 
 .slider__btn {
   position: absolute;
+  left: 50%;
   top: 30%;
-  transform: translateX(3%);
+  transform: translateX(-50%);
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .slider__btn:hover {
@@ -1508,8 +1511,6 @@ body {
   border-radius: 50%;
   background-color: white;
   box-shadow: 1.5px 2.598px 9px 0px rgba(2, 2, 1, 0.1);
-  margin-right: 205px;
-  transform: translateX(-37%);
   border: none;
 }
 
@@ -1572,8 +1573,10 @@ body {
   background-image: linear-gradient(80deg, #85a6f6 0%, #c149e7 100%);
   box-shadow: 5.5px 9.526px 16px 0px rgba(90, 118, 233, 0.23);
   color: #ffffff;
-  padding: 10px 50px;
+  padding: 15px 53px;
   border-radius: 50px;
+  width: 240px;
+  height: 56px;
 }
 
 .footer__btn:hover {
@@ -2038,7 +2041,10 @@ body {
   }
 
   .certificate__picture {
-    margin: 0;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin: 0 auto;
   }
 
   .certificate__picture::before {
@@ -2062,19 +2068,24 @@ body {
     text-align: left;
   }
 
+  .review .container {
+    width: 100%;
+  }
+
+  .slider__btn {
+    width: 426px;
+  }
+
   .reviews {
     font-size: 20px;
     line-height: 45px;
     padding-top: 71px;
   }
 
-  .review .container {
-    width: 100%;
-  }
-
   .review-wrap {
     display: flex;
     overflow: hidden;
+    padding: 45px 0;
   }
 
   .hidden {
@@ -2087,9 +2098,10 @@ body {
 
   .review__list {
     display: flex;
-    justify-content: flex-end;
-    transform: translateX(13%);
-    left: -50%;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 45px 0;
   }
 
   .review__list-text {
@@ -2100,23 +2112,22 @@ body {
     top: 41%;
   }
 
-  .review__list-img {
-    padding-top: 60px;
-    padding-bottom: 62px;
-  }
-
   .review__list-item {
     width: 380px;
     height: 500px;
-    margin-right: 40px;
   }
 
-  .slider__btn {
-    transform: translateX(48%);
+  .review__list-item:first-of-type {
+    transform: translateX(-15%);
   }
 
-  .slider__btn-left {
-    margin-right: 317px;
+  .review__list-item:last-of-type {
+    transform: translateX(15%);
+  }
+
+  .review__list-img {
+    padding-top: 60px;
+    padding-bottom: 62px;
   }
 
   .certificate {
@@ -2128,11 +2139,10 @@ body {
   }
 
   .footer {
-    background-size: inherit;
     background-image: url(../images/footer-bg-tab.png);
     font-size: 16px;
     line-height: 25px;
-    background-position: bottom;
+    background-position: top right;
   }
 
   .footer__logo-img {
@@ -2152,14 +2162,22 @@ body {
   }
 
   .footer__btn {
+    margin-left: 35px;
+  }
+
+  .footer__btns {
     display: flex;
-    position: absolute;
-    left: 65px;
   }
 
   .footer__btns-social {
     margin-top: 0;
     margin-left: 20px;
+    margin-top: 8px;
+  }
+
+  .footer__terms {
+    margin: 0;
+    margin-left: 35px;
   }
 
   .footer__terms-text {
@@ -2661,6 +2679,13 @@ body {
     background-size: contain;
   }
 
+  .certificate__picture {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin: 0;
+  }
+
   .certificate-wrapper {
     display: flex;
     justify-content: space-around;
@@ -2692,7 +2717,7 @@ body {
   .reviews {
     font-size: 30px;
     padding-top: 80px;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
   }
 
   .review__list {
@@ -2715,6 +2740,14 @@ body {
   .hid {
     display: flex;
     position: relative;
+    background-image: linear-gradient(80deg, #85a6f6 0%, #c149e7 100%);
+    box-shadow: 5.5px 9.526px 16px 0px rgba(90, 118, 233, 0.23);
+    color: #ffffff;
+    padding: 15px 53px;
+    border-radius: 50px;
+    width: 240px;
+    height: 56px;
+    margin-left: 30px;
   }
 
   .footer {
