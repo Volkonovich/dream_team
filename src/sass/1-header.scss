@@ -6,6 +6,13 @@
   position: relative;
   min-height: 450px;
   // padding: 30px;
+  &__logotype{
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: 5px;
+  }
 
   &__title-paragraf {
     margin: 0 auto;
@@ -36,6 +43,11 @@
     font-weight: 700;
     color: #fff;
     text-align: center;
+
+    &:hover{
+      cursor: pointer;
+      color: $secondary-color;
+    }
 
     &::after {
       display: block;

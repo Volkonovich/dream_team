@@ -508,6 +508,18 @@ ol {
   min-height: 450px;
 }
 
+.header__logotype {
+  -webkit-animation-name: floating;
+  animation-name: floating;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  margin-top: 5px;
+}
+
 .header__title-paragraf {
   margin: 0 auto;
   font-family: "Helvetica Neue", sans-serif;
@@ -536,6 +548,11 @@ ol {
   font-weight: 700;
   color: #fff;
   text-align: center;
+}
+
+.header__more:hover {
+  cursor: pointer;
+  color: #fec240;
 }
 
 .header__more::after {
