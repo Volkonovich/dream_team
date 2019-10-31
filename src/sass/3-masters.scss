@@ -9,6 +9,7 @@
   background-position: 0 90%;
   background-repeat: no-repeat;
 
+
   &__img {
     margin-bottom: 18px;
   }
@@ -16,7 +17,7 @@
   .section-title {
     text-transform: uppercase;
     text-align: center;
-    padding-top: 15px;
+    margin-bottom: 80px;
   }
 
   &__paragraf-one {
@@ -27,18 +28,20 @@
     color: $sixth-color;
     text-align: center;
     margin: 0 auto;
-    padding-top: 16px;
+
+    margin-bottom: 15px;
 
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
+
 
     &-item {
       display: block;
       text-align: center;
+      margin-bottom: 34px;
 
     }
   }
@@ -61,7 +64,7 @@
       color: $main-color;
       width: 83%;
       margin: 0 auto;
-      margin-bottom: 34px;
+
     }
   }
 }
@@ -235,7 +238,7 @@
       font-size: 30px;
       padding: 0;
       margin-top: 40px;
-      
+
     }
   }
 }

@@ -1,10 +1,11 @@
 .components {
   margin: 0 auto;
+  padding-top: 50px;
+
 
   .section-title {
-    padding-top: 50px;
-    padding-bottom: 25px;
     margin: 0 auto;
+    margin-bottom: 25px;
     text-align: center;
   
   
@@ -18,8 +19,13 @@
 .components-list__item {
   width: 290px;
 
+  &:last-child {
+    margin-bottom: 50px;
+  }
+
   &::before {
     margin: 0 auto;
+    margin-bottom: 35px;
     display: flex;
     content: '';
     background-repeat: no-repeat;
@@ -27,13 +33,11 @@
     background-position: center;
     width: 140px;
     height: 142px;
-    margin-top: 20px;
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-left: auto;
-    margin-top: 5px;
   }
 }
 
@@ -66,8 +70,7 @@
 .skills-title {
   font-family: $main-font;
   font-weight: 700;
-  padding-top: 35px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: #2c2c2c;
 
   &__span--pink {
@@ -98,8 +101,6 @@
 
 .link {
   cursor: pointer;
-  margin-top: 50px;
-  margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
   display: flex;

@@ -10,9 +10,12 @@
     line-height: 22px;
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 25px;
     color: $secondary-color;
     letter-spacing: 0.48px;
+  }
+
+  .container:first-child {
+    margin-bottom: 25px;
   }
 
   .container:last-child {

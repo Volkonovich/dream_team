@@ -379,6 +379,10 @@ template {
   box-sizing: border-box;
 }
 
+picture {
+  display: block;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -517,7 +521,6 @@ ol {
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
-  margin-top: 5px;
 }
 
 .header__title-paragraf {
@@ -528,6 +531,7 @@ ol {
   text-align: center;
   font-size: 16px;
   width: 81%;
+  margin-bottom: 30px;
 }
 
 .header__title-name {
@@ -537,7 +541,6 @@ ol {
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  padding-top: 30px;
   margin-bottom: 38px;
 }
 
@@ -663,7 +666,7 @@ ol {
 .masters .section-title {
   text-transform: uppercase;
   text-align: center;
-  padding-top: 15px;
+  margin-bottom: 80px;
 }
 
 .masters__paragraf-one {
@@ -674,18 +677,18 @@ ol {
   color: #e9e9f3;
   text-align: center;
   margin: 0 auto;
-  padding-top: 16px;
+  margin-bottom: 15px;
 }
 
 .masters__list {
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
 }
 
 .masters__list-item {
   display: block;
   text-align: center;
+  margin-bottom: 34px;
 }
 
 .masters__name-card {
@@ -705,7 +708,6 @@ ol {
   color: #282828;
   width: 83%;
   margin: 0 auto;
-  margin-bottom: 34px;
 }
 
 .product {
@@ -721,9 +723,12 @@ ol {
   line-height: 22px;
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 25px;
   color: #fec240;
   letter-spacing: 0.48px;
+}
+
+.product .container:first-child {
+  margin-bottom: 25px;
 }
 
 .product .container:last-child {
@@ -1002,12 +1007,12 @@ ol {
 
 .components {
   margin: 0 auto;
+  padding-top: 50px;
 }
 
 .components .section-title {
-  padding-top: 50px;
-  padding-bottom: 25px;
   margin: 0 auto;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -1019,8 +1024,13 @@ ol {
   width: 290px;
 }
 
+.components-list__item:last-child {
+  margin-bottom: 50px;
+}
+
 .components-list__item::before {
   margin: 0 auto;
+  margin-bottom: 35px;
   display: flex;
   content: '';
   background-repeat: no-repeat;
@@ -1028,7 +1038,6 @@ ol {
   background-position: center;
   width: 140px;
   height: 142px;
-  margin-top: 20px;
   -webkit-animation-name: floating;
   animation-name: floating;
   -webkit-animation-duration: 3s;
@@ -1038,7 +1047,6 @@ ol {
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   margin-left: auto;
-  margin-top: 5px;
 }
 
 @-webkit-keyframes floating {
@@ -1084,8 +1092,7 @@ ol {
 .skills-title {
   font-family: "Helvetica Neue", sans-serif;
   font-weight: 700;
-  padding-top: 35px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: #2c2c2c;
 }
 
@@ -1115,8 +1122,6 @@ ol {
 
 .link {
   cursor: pointer;
-  margin-top: 50px;
-  margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -1141,7 +1146,7 @@ ol {
 
 .section-title-study {
   padding-top: 0px;
-  padding-bottom: 70px;
+  margin-bottom: 70px;
   text-align: center;
 }
 
@@ -1150,10 +1155,11 @@ ol {
   background-image: url(../images/section-2-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 50px;
 }
 
-.form__list-title {
-  padding-left: 25px;
+.form__list-item {
+  margin-bottom: 27px;
 }
 
 .form__list-item::before {
@@ -1181,7 +1187,8 @@ ol {
 .form__list-title {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-left: 25px;
 }
 
 .form__list-description {
@@ -1189,7 +1196,6 @@ ol {
   width: 181px;
   color: #6b6f7a;
   padding-left: 23px;
-  padding-bottom: 27px;
 }
 
 .form::after {
@@ -1368,6 +1374,10 @@ body {
   min-height: 450px;
 }
 
+.certificate__title {
+  margin-bottom: 27px;
+}
+
 .certificate__picture {
   display: block;
   transition: all 0.2s linear;
@@ -1425,7 +1435,6 @@ body {
   width: 220px;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 27px;
 }
 
 .hidden {
@@ -1451,8 +1460,8 @@ body {
 }
 
 .review__list-img {
-  padding-top: 40px;
-  padding-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 .review__list-text {
@@ -1490,9 +1499,9 @@ body {
   text-align: center;
   margin: 0 auto;
   width: 270px;
-  height: 460px;
   box-shadow: 0px 10px 30px 0px rgba(1, 1, 0, 0.07);
   position: relative;
+  padding-bottom: 20px;
 }
 
 .read-more {
@@ -1566,27 +1575,26 @@ body {
   background-position: center;
   min-width: 320px;
   padding-top: 55px;
+  padding-bottom: 45px;
   padding-bottom: 27px;
   background-repeat: no-repeat;
 }
 
 .footer__logo-img {
-  padding-bottom: 27px;
+  margin-bottom: 27px;
+}
+
+.footer__wrap {
+  margin-bottom: 32px;
 }
 
 .footer__content-adr-tx:last-of-type {
   margin-bottom: 36px;
 }
 
-.footer__list-item:last-of-type {
-  margin-bottom: 32px;
-}
-
-.footer__list-link {
-  color: #2c2c2c;
-}
-
 .footer__btn {
+  display: block;
+  margin: 0 auto;
   background-image: linear-gradient(80deg, #85a6f6 0%, #c149e7 100%);
   box-shadow: 5.5px 9.526px 16px 0px rgba(90, 118, 233, 0.23);
   color: #ffffff;
@@ -1594,6 +1602,7 @@ body {
   border-radius: 50px;
   width: 240px;
   height: 56px;
+  margin-bottom: 37px;
 }
 
 .footer__btn:hover {
@@ -1601,12 +1610,15 @@ body {
   box-shadow: 0px 13px 17.1px 0.9px rgba(250, 184, 51, 0.4);
 }
 
-.footer__btns-social {
-  margin-top: 37px;
+.footer__list-link {
+  color: #2c2c2c;
+}
+
+.footer__list__btns-social {
   margin-bottom: 36px;
 }
 
-.footer__btns-social-img {
+.footer__list__btns-social-img {
   cursor: pointer;
   box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
   -webkit-animation: pulse 2s infinite;
@@ -1614,7 +1626,7 @@ body {
   border-radius: 50%;
 }
 
-.footer__btns-social-img :hover {
+.footer__list__btns-social-img :hover {
   -webkit-animation: none;
   animation: none;
 }
@@ -1647,8 +1659,12 @@ body {
   }
 }
 
-.footer__btns-social-link:nth-child(-n+2) {
+.footer__list__btns-social-link:nth-child(-n+2) {
   margin-right: 18px;
+}
+
+.footer__list .hid {
+  display: none;
 }
 
 .footer__terms {
@@ -1658,15 +1674,10 @@ body {
   line-height: 25px;
   width: 190px;
   margin: 0 auto;
-  padding-bottom: 45px;
 }
 
 .footer__terms-links {
   color: #6b6f7a;
-}
-
-.hid {
-  display: none;
 }
 
 @media (min-width: 768px) {
@@ -2102,7 +2113,7 @@ body {
   .review-wrap {
     display: flex;
     overflow: hidden;
-    padding: 45px 0;
+    padding: 45px 0;
   }
 
   .hidden {
@@ -2131,7 +2142,6 @@ body {
 
   .review__list-item {
     width: 380px;
-    height: 500px;
   }
 
   .review__list-item:first-of-type {
@@ -2179,6 +2189,7 @@ body {
   }
 
   .footer__btn {
+    margin: 0;
     margin-left: 35px;
   }
 
