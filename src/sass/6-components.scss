@@ -166,10 +166,11 @@
   .skills-descriptions {
     font-size: 16px;
     line-height: 30px;
-    width: 93%;
+    width: 100%;
   }
 
   .components-list__item {
+    padding-left: 45px;
     width: 620px;
   }
 
@@ -201,6 +202,7 @@
   }
 
   .components-list__item {
+    padding-left: 0;
     width: 420px;
   }
 
