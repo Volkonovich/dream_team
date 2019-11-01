@@ -1027,7 +1027,6 @@ ol {
 
 .components-list__item:last-child {
   margin-bottom: 50px;
-  padding: 0;
 }
 
 .components-list__item::before {
@@ -1969,7 +1968,7 @@ body {
   }
 
   .components-list__item {
-    padding-left: 45px;
+    padding-left: 90px;
     width: 620px;
   }
 
@@ -2680,6 +2679,11 @@ body {
     margin: 0;
     padding-left: 200px;
     margin-bottom: 40px;
+  }
+
+  .section-title-study {
+    text-align: left;
+    padding-left: 200px;
   }
 
   .form::after {
