@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:active, :focus {
+  outline: none;
+}
+
 picture {
   display: block;
 }
