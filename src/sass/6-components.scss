@@ -7,20 +7,23 @@
     margin: 0 auto;
     margin-bottom: 25px;
     text-align: center;
-  
-  
+
+
     &__span {
       color: $main-color;
     }
-  
+
   }
 }
 
+
 .components-list__item {
   width: 290px;
+  padding-bottom: 30px;
 
   &:last-child {
     margin-bottom: 50px;
+    padding: 0;
   }
 
   &::before {
@@ -143,7 +146,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 
     &__item:nth-child(2)::before {
       background-image: url(../images/comp-tab.png);
@@ -157,11 +160,13 @@
 
   .skills-title {
     font-size: 25px;
+    padding-top: 30px;
   }
 
   .skills-descriptions {
     font-size: 16px;
     line-height: 30px;
+    width: 93%;
   }
 
   .components-list__item {
@@ -171,11 +176,6 @@
   .components-list__item::before {
     width: 195px;
     height: 199px;
-  }
-
-  .form__list-item {
-    margin: 0 auto;
-    width: 620px;
   }
 
   .link {
@@ -197,6 +197,7 @@
   .components-list {
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   .components-list__item {

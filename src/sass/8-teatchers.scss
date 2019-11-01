@@ -1,5 +1,6 @@
 .teatchers {
   overflow: hidden;
+  padding-bottom: 50px;
 }
 
 .section-title-teatchers {
@@ -24,7 +25,7 @@ body {
   margin-bottom: 55px;
   background-color: #fff;
   width: 270px;
-  height: 590px;
+  height: 625px;
   box-shadow: 0px 10px 30px 0px rgba(2, 2, 1, 0.07);
 }
 
@@ -89,9 +90,11 @@ body {
 
 .slider__description {
   padding-left: 15px;
-  line-height: 28px;
+  line-height: 30px;
   font-family: $main-font;
   color: #6b6f7a;
+  padding-right: 10px;
+  font-size: 14px;
 }
 
 .slider__span {
@@ -99,7 +102,7 @@ body {
 
   &-line {
     padding-top: 10px;
-    width: 84%;
+    width: 90%;
     display: flex;
     font-family: $main-font;
     color: #2c2c2c;
@@ -165,6 +168,12 @@ body {
     margin-right: 35%;
   }
 
+  .slider__description {
+    width: 95%;
+    padding-left: 30px;
+    line-height: 30px;
+    font-size: 16px;
+  }
 
   .slider__ctrl {
     transform: translateY(305%);
@@ -178,7 +187,7 @@ body {
   }
 
   .section-title-teatchers {
-    padding-top: 130px;
+    padding-top: 100px;
     margin-bottom: 80px;
     text-align: center;
   }

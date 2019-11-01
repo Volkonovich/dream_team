@@ -1022,10 +1022,12 @@ ol {
 
 .components-list__item {
   width: 290px;
+  padding-bottom: 30px;
 }
 
 .components-list__item:last-child {
   margin-bottom: 50px;
+  padding: 0;
 }
 
 .components-list__item::before {
@@ -1150,12 +1152,17 @@ ol {
   text-align: center;
 }
 
+.hid {
+  display: none;
+}
+
 .form {
   position: relative;
   background-image: url(../images/section-2-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 .form__list-item {
@@ -1193,9 +1200,10 @@ ol {
 
 .form__list-description {
   font-family: "Helvetica Neue", sans-serif;
-  width: 181px;
+  width: 70%;
   color: #6b6f7a;
   padding-left: 23px;
+  line-height: 30px;
 }
 
 .form::after {
@@ -1236,6 +1244,7 @@ ol {
 
 .teatchers {
   overflow: hidden;
+  padding-bottom: 50px;
 }
 
 .section-title-teatchers {
@@ -1259,7 +1268,7 @@ body {
   margin-bottom: 55px;
   background-color: #fff;
   width: 270px;
-  height: 590px;
+  height: 625px;
   box-shadow: 0px 10px 30px 0px rgba(2, 2, 1, 0.07);
 }
 
@@ -1321,9 +1330,11 @@ body {
 
 .slider__description {
   padding-left: 15px;
-  line-height: 28px;
+  line-height: 30px;
   font-family: "Helvetica Neue", sans-serif;
   color: #6b6f7a;
+  padding-right: 10px;
+  font-size: 14px;
 }
 
 .slider__span {
@@ -1332,7 +1343,7 @@ body {
 
 .slider__span-line {
   padding-top: 10px;
-  width: 84%;
+  width: 90%;
   display: flex;
   font-family: "Helvetica Neue", sans-serif;
   color: #2c2c2c;
@@ -1501,7 +1512,7 @@ body {
   width: 270px;
   box-shadow: 0px 10px 30px 0px rgba(1, 1, 0, 0.07);
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
 }
 
 .read-more {
@@ -1578,6 +1589,10 @@ body {
   padding-bottom: 45px;
   padding-bottom: 27px;
   background-repeat: no-repeat;
+}
+
+.footer-btn {
+  margin-right: 10px;
 }
 
 .footer__logo-img {
@@ -1931,7 +1946,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .components-list__item:nth-child(2)::before {
@@ -1944,11 +1959,13 @@ body {
 
   .skills-title {
     font-size: 25px;
+    padding-top: 30px;
   }
 
   .skills-descriptions {
     font-size: 16px;
     line-height: 30px;
+    width: 93%;
   }
 
   .components-list__item {
@@ -1958,11 +1975,6 @@ body {
   .components-list__item::before {
     width: 195px;
     height: 199px;
-  }
-
-  .form__list-item {
-    margin: 0 auto;
-    width: 620px;
   }
 
   .link {
@@ -1988,6 +2000,12 @@ body {
   .form {
     background-position: 0 35px;
     background-size: cover;
+  }
+
+  .form__list-item {
+    margin: 0 auto;
+    width: 620px;
+    margin-bottom: 30px;
   }
 
   .form__list-description .form__list-description-span {
@@ -2037,6 +2055,13 @@ body {
   .card-name {
     transform: translateY(-65%);
     margin-right: 35%;
+  }
+
+  .slider__description {
+    width: 95%;
+    padding-left: 30px;
+    line-height: 30px;
+    font-size: 16px;
   }
 
   .slider__ctrl {
@@ -2113,7 +2138,6 @@ body {
   .review-wrap {
     display: flex;
     overflow: hidden;
-    padding: 45px 0;
   }
 
   .hidden {
@@ -2129,7 +2153,6 @@ body {
     justify-content: center;
     left: 50%;
     transform: translateX(-50%);
-    padding: 45px 0;
   }
 
   .review__list-text {
@@ -2358,8 +2381,8 @@ body {
 
   .masters__name-card::before {
     display: block;
-    top: -20px;
-    left: -17px;
+    top: -16px;
+    left: -4px;
     content: '';
     background-repeat: no-repeat;
     position: absolute;
@@ -2612,6 +2635,7 @@ body {
   .components-list {
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   .components-list__item {
@@ -2640,27 +2664,32 @@ body {
 
   .form__list-description {
     width: 100%;
+    line-height: 30px;
+    padding-left: 37px;
+  }
+
+  .form__list-title {
+    font-size: 30px;
+    line-height: 30px;
+    padding-left: 37px;
   }
 
   .form__list-item {
     margin: 0;
     padding-left: 200px;
-  }
-
-  .section-title-study {
-    padding-left: 200px;
+    margin-bottom: 40px;
   }
 
   .form::after {
-    bottom: -130px;
+    bottom: -60px;
     width: 900px;
     height: 800px;
-    right: 280px;
+    right: 200px;
   }
 
   body::after {
     transform: translateX(35px);
-    bottom: -334px;
+    bottom: -360px;
     right: 185px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2677,7 +2706,7 @@ body {
   }
 
   .section-title-teatchers {
-    padding-top: 130px;
+    padding-top: 100px;
     margin-bottom: 80px;
     text-align: center;
   }
@@ -2776,7 +2805,7 @@ body {
     border-radius: 50px;
     width: 240px;
     height: 56px;
-    margin-left: 30px;
+    margin-left: 120px;
   }
 
   .footer {
@@ -2820,5 +2849,9 @@ body {
 
   .footer__terms-links {
     margin-right: 77px;
+  }
+
+  .footer__btns-social {
+    margin-top: -13px;
   }
 }

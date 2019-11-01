@@ -15,6 +15,10 @@
   padding-bottom: 27px;
   background-repeat: no-repeat;
 
+  &-btn {
+    margin-right: 10px;
+  }
+
   &__logo {
     &-img {
       margin-bottom: 27px;
@@ -33,6 +37,7 @@
       }
     }
   }
+
   &__btn {
     display: block;
     margin: 0 auto;
@@ -219,7 +224,7 @@
     border-radius: 50px;
     width: 240px;
     height: 56px;
-    margin-left: 30px;
+    margin-left: 120px;
   }
 
   .footer {
@@ -265,5 +270,9 @@
         margin-right: 77px;
       }
     }
+  }
+
+  .footer__btns-social {
+    margin-top: -13px;
   }
 }
